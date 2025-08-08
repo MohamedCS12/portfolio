@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Helal | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="transparent-header">
+    <div class="profile-center">
+      <img src="me.jpeg" alt="Mohamed Helal" class="profile-img" />
+      <h1>Hi, I'm Mohamed Helal</h1>
+      <p>Software Developer Graduated From Monash University</p>
+    </div>
+
+    <div class="contact-box">
+      <h2>Contact Me</h2>
+      <div class="button-group top-buttons">
+        <a href="resume.pdf" class="btn resume" target="_blank"><i class="fas fa-file-alt"></i> Resume</a>
+        <a href="https://www.linkedin.com/in/mohamed-helal-071718228" class="btn linkedin" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/MohamedCS12" class="btn github" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://wa.me/201288898944" class="btn whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="mailto:mohamed.helal.02468@gmail.com" class="btn email"><i class="fas fa-envelope"></i> Email</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section-grid">
+    <!-- Experience -->
+    <section class="section-card" id="experience">
+      <h2>Experience</h2>
+
+      <div class="experience-item">
+        <button class="exp-toggle">
+          <div style="text-align: left;">
+            <strong>SHRDC</strong><br>
+            Software Developer Intern<br>
+            Nov 2024 – Apr 2025
+          </div>
+          <i class="fas fa-chevron-down toggle-icon"></i>
+        </button>
+        <div class="exp-details">
+          <ul>
+            <li>Deployed open-source logistics software (Fleetbase) on self-hosted Google Cloud VM instances.</li>
+            <li>Built and managed AI agents and chatbot workflows using platforms like Dify and Open Web UI.</li>
+            <li>Fine-tuned and implemented RAG pipelines with GPT-3.5-turbo to enhance chatbot responses.</li>
+            <li>Containerized chatbot services using Docker and tested performance with Locust.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <button class="exp-toggle">
+          <div style="text-align: left;">
+            <strong>DYODD SDN Bhd</strong><br>
+            Software Engineering Intern<br>
+            Nov 2023 – Feb 2024
+          </div>
+          <i class="fas fa-chevron-down toggle-icon"></i>
+        </button>
+        <div class="exp-details">
+          <ul>
+            <li>Built chatbots and AI agents using LLMs to automate customer interactions.</li>
+            <li>Fine-tuned GPT-based models for improved task-specific performance.</li>
+            <li>Extended Salesforce features to enhance internal workflows.</li>
+            <li>Gained hands-on experience across the SDLC in an agile team.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Tools -->
+    <section class="section-card gradient-bg" id="tools">
+      <h2>Frameworks & Tools</h2>
+      <ul class="framework-list">
+        <li><i class="fas fa-mobile-alt"></i> Android Studio</li>
+        <li><i class="fas fa-code"></i> Visual Studio Code</li>
+        <li><i class="fas fa-database"></i> MySQL, Laravel</li>
+        <li><i class="fab fa-docker"></i> Docker</li>
+        <li><i class="fab fa-figma"></i> Figma Design</li>
+        <li><i class="fab fa-git-alt"></i> GitHub & GitLab</li>
+        <li><i class="fas fa-cloud"></i> Salesforce</li>
+        <li><i class="fab fa-linux"></i> Ubuntu</li>
+      </ul>
+    </section>    
+
+    <!-- Skills -->
+    <section class="section-card" id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li><i class="fas fa-code"></i> Java</li>
+        <li><i class="fas fa-code"></i> Python</li>
+        <li><i class="fas fa-code"></i> C++</li>
+        <li><i class="fas fa-database"></i> SQL</li>
+        <li><i class="fab fa-php"></i> PHP</li>
+        <li><i class="fas fa-mobile-alt"></i> Android Mobile Development</li>
+        <li><i class="fab fa-linux"></i> Linux</li>
+        <li><i class="fas fa-pencil-ruler"></i> UI/UX</li>
+        <li><i class="fas fa-project-diagram"></i> Agile</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section class="section-card gradient-bg" id="projects">
+      <h2>Projects</h2>
+
+      <div class="project-item">
+        <button class="proj-toggle">Android Workout App</button>
+        <div class="proj-details">
+          <p><strong>Tech:</strong> Android Studio, Java, XML, Firebase</p>
+          <p>Designed UI components, specified requirements, and implemented workout tracking, rewards, and milestones.</p>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <button class="proj-toggle">Fine Tune OpenAI LLMs</button>
+        <div class="proj-details">
+          <p><strong>Tech:</strong> Python, VS Code, OpenAI API</p>
+          <p>Fine-tuned GPT models as chatbots for automated customer interaction on websites.</p>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <button class="proj-toggle">Fleet Base Hosting & Android Integration</button>
+        <div class="proj-details">
+          <p><strong>Tech:</strong> Docker, Linux, Google Maps API, Postman</p>
+          <p>Self-hosted Fleet Base, added maps tracking, integrated dashboard with Android app, and customized storefront interface.</p>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <button class="proj-toggle">AI Chatbot for Strata Management Act</button>
+        <div class="proj-details">
+          <p><strong>Tech:</strong> Python, VS Code, Facebook Messenger</p>
+          <p>Created chatbot answering questions on Malaysian strata laws; integrated with Messenger for public use.</p>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <button class="proj-toggle">Salesforce Production Features</button>
+        <div class="proj-details">
+          <p><strong>Tech:</strong> APEX, Salesforce</p>
+          <p>Added cloning buttons, flow triggers, and follow-up email automation to improve CRM processes.</p>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <button class="proj-toggle">Security Reporting System</button>
+        <div class="proj-details">
+          <p><strong>Tech:</strong> Google Apps Script, Sheets, Forms, Zapier, JS, SQL</p>
+          <p>Automated reporting linked to WhatsApp with Google Forms, webhooks, and backend processing.</p>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <button class="proj-toggle">AI Automation with Task Magic</button>
+        <div class="proj-details">
+          <p><strong>Tech:</strong> Task Magic, Facebook API, Google Forms</p>
+          <p>Automatically created and customized Facebook groups based on form submissions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section-card" id="education">
+      <h2>Education</h2>
+      <p>
+        <strong>2023-02 – 2025-07</strong><br />
+        Bachelor of Science: Computer Science<br />
+        Monash University Malaysia – Selangor<br /><br />
+
+        <strong>2020-09 – 2022-09</strong><br />
+        Bachelor of Science: Computer Science<br />
+        University of Nottingham Malaysia – Selangor (Transferred to Monash)<br /><br />
+
+        <strong>2017-09 – 2020-06</strong><br />
+        High School: A-Levels<br />
+        Noor British International School – Cairo
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Mohamed Helal</p>
+  </footer>
+
+  <script>
+    // Experience toggle
+    document.querySelectorAll('.exp-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const box = btn.nextElementSibling;
+        box.style.display = box.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+
+    // Project toggle
+    document.querySelectorAll('.proj-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const box = btn.nextElementSibling;
+        box.style.display = box.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+</html>
