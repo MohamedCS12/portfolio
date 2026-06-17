@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohamed Helal | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
@@ -11,22 +14,26 @@
   <div class="container">
     <!-- Left Column -->
     <aside class="left-column">
-      <div class="profile">
-        <img src="me.jpeg" alt="Mohamed Helal" class="profile-img" />
+      <div class="profile" id="about">
+        <img src="me.jpeg" alt="Mohamed Helal" class="profile-img" loading="lazy" />
         <h1>Mohamed Helal</h1>
         <h2 class="title">Mobile Developer | Android & Flutter</h2>
         <p>
-          Computer Science graduate from Monash University, Australia (July 2025), with expertise in mobile app development, Python programming, and AI-driven solutions. Experienced in Android development using Java & XML with Android Studio, Flutter for cross-platform apps, and UI/UX design with Figma. Skilled in Firebase and SQL for building secure and scalable applications.
+          Computer Science graduate from Monash University, Australia (July 2025), focused on mobile app development and AI-driven solutions. Experienced in Android development using Java and XML with Android Studio, Flutter for cross-platform apps, and UI/UX design with Figma.
         </p>
 
         <p>
-          Hands-on experience in fine-tuning AI models with OpenAI and Groq, developing AI agents, and automating workflows for real-world use cases. Contributed to projects involving logistics software, API integrations, mobile applications, and advanced chatbot systems using Retrieval-Augmented Generation.
+          Hands-on experience in fine-tuning AI models with OpenAI and Groq, building AI agents, and automating workflows for real-world use cases. Contributed to logistics software, API integrations, mobile applications, and chatbot systems using Retrieval-Augmented Generation.
         </p>
 
         <p>
-          Proficient in modern tools and technologies including Docker, Google Cloud, AWS, and Git-based workflows (GitHub, GitLab). Experienced across the software development lifecycle in agile environments.
+          Proficient in Docker, Google Cloud, AWS, and Git-based workflows. Comfortable working across the software development lifecycle in agile environments.
         </p>
-        <br></br>
+        <nav class="section-nav" aria-label="Section navigation">
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+        </nav>
       </div>
 
       <!-- Open To Work -->
@@ -50,11 +57,11 @@
       <!-- Quick Contact -->
       <div class="contact-box">
         <h2>📞 Quick Contact</h2>
-        <a href="resume.pdf" class="btn resume" target="_blank"><i class="fas fa-file-alt"></i> Download Resume as PDF</a>
-        <a href="https://www.linkedin.com/in/mohamed-helal-071718228" class="btn linkedin" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="https://github.com/MohamedCS12" class="btn github" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-        <a href="https://wa.me/201288898944" class="btn whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-        <a href="mailto:mohamed.helal.02468@gmail.com" class="btn email"><i class="fas fa-envelope"></i> Email</a>
+        <a href="resume.pdf" class="btn resume" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Download Resume as PDF</a>
+        <a href="https://www.linkedin.com/in/mohamed-helal-071718228" class="btn linkedin" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/MohamedCS12" class="btn github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://wa.me/201288898944" class="btn whatsapp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohamed.helal.02468@gmail.com&su=Hello%20Mohamed" class="btn email" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i> Email</a>
       </div>
 
       <!-- Education -->
@@ -97,9 +104,9 @@
               <strong>Software Developer Intern</strong> – SHRDC  
               <span class="date">(Nov 2024 – Apr 2025)</span>
             </div>
-            <button class="toggle-btn">More</button>
+            <button class="toggle-btn" type="button" aria-expanded="false" aria-controls="shrdc-details">More</button>
           </div>
-          <div class="exp-details">
+          <div class="exp-details" id="shrdc-details" hidden>
             <p>Selangor Human Resource Development Centre | Selangor, Malaysia</p>
             <ul>
               <li>Deployed and containerized Fleetbase logistics software using Docker and AWS EC2.</li>
@@ -117,9 +124,9 @@
               <strong>Software Engineer Intern</strong> – DYODD SDN Bhd  
               <span class="date">(Nov 2023 – Feb 2024)</span>
             </div>
-            <button class="toggle-btn">More</button>
+            <button class="toggle-btn" type="button" aria-expanded="false" aria-controls="dyodd-details">More</button>
           </div>
-          <div class="exp-details">
+          <div class="exp-details" id="dyodd-details" hidden>
             <p>DYODD SDN Bhd | Selangor, Malaysia</p>
             <ul>
               <li>Built chatbots and AI agents using LLMs to automate customer interactions.</li>
@@ -138,9 +145,9 @@
         <div class="proj-item">
           <div class="proj-header">
             <div><strong>Android Application (workout exercises with no equipment)</strong></div>
-            <button class="toggle-btn">More</button>
+            <button class="toggle-btn" type="button" aria-expanded="false" aria-controls="project-workout-details">More</button>
           </div>
-          <div class="proj-details">
+          <div class="proj-details" id="project-workout-details" hidden>
             <p>A group project, where I specified the requirements, designed UI components, and implemented features (tracking progress, rewards, workout difficulties, and milestones).</p>
           </div>
         </div>
@@ -148,9 +155,9 @@
         <div class="proj-item">
           <div class="proj-header">
             <div><strong>Fine-Tune OpenAI Large Language Models</strong></div>
-            <button class="toggle-btn">More</button>
+            <button class="toggle-btn" type="button" aria-expanded="false" aria-controls="project-openai-details">More</button>
           </div>
-          <div class="proj-details">
+          <div class="proj-details" id="project-openai-details" hidden>
             <p>An AI model was used as a website chatbot to handle customer inquiries.</p>
           </div>
         </div>
@@ -158,9 +165,9 @@
         <div class="proj-item">
           <div class="proj-header">
             <div><strong>AI Chatbot for Strata Management Act 2013 Rules (Python)</strong></div>
-            <button class="toggle-btn">More</button>
+            <button class="toggle-btn" type="button" aria-expanded="false" aria-controls="project-strata-details">More</button>
           </div>
-          <div class="proj-details">
+          <div class="proj-details" id="project-strata-details" hidden>
             <p>A set of Malaysian laws regulates the management of buildings, common property, and related matters. Python was integrated with Visual Studio Code through Facebook Messenger.</p>
           </div>
         </div>
@@ -168,9 +175,9 @@
         <div class="proj-item">
           <div class="proj-header">
             <div><strong>Sales Force Production System New Features</strong></div>
-            <button class="toggle-btn">More</button>
+            <button class="toggle-btn" type="button" aria-expanded="false" aria-controls="project-salesforce-details">More</button>
           </div>
-          <div class="proj-details">
+          <div class="proj-details" id="project-salesforce-details" hidden>
             <p>Added a new button for cloning any existing record. A follow-up email is to be sent to the customers to check the quality of the service.</p>
           </div>
         </div>
@@ -178,9 +185,9 @@
         <div class="proj-item">
           <div class="proj-header">
             <div><strong>Fleet Base Local Hosting and Development</strong></div>
-            <button class="toggle-btn">More</button>
+            <button class="toggle-btn" type="button" aria-expanded="false" aria-controls="project-fleetbase-details">More</button>
           </div>
-          <div class="proj-details">
+          <div class="proj-details" id="project-fleetbase-details" hidden>
             <p>Configured Fleet Base locally using Docker, a logistics management and e-commerce platform, and added Google Maps API for driver and order tracking. Integrated the local host dashboard into the Android application, The Navigator.</p>
           </div>
         </div>
@@ -188,9 +195,9 @@
         <div class="proj-item">
           <div class="proj-header">
             <div><strong>Developed a Security Reporting System</strong></div>
-            <button class="toggle-btn">More</button>
+            <button class="toggle-btn" type="button" aria-expanded="false" aria-controls="project-security-details">More</button>
           </div>
-          <div class="proj-details">
+          <div class="proj-details" id="project-security-details" hidden>
             <p>Utilized App scripts, Google tools (i.e., sheets, forms), and webhooks through Zapier. These were linked to WhatsApp. Additionally, JavaScript and SQL were employed.</p>
           </div>
         </div>
@@ -198,67 +205,66 @@
         <div class="proj-item">
           <div class="proj-header">
             <div><strong>Created Automation Using AI Software (Task Magic)</strong></div>
-            <button class="toggle-btn">More</button>
+            <button class="toggle-btn" type="button" aria-expanded="false" aria-controls="project-taskmagic-details">More</button>
           </div>
-          <div class="proj-details">
+          <div class="proj-details" id="project-taskmagic-details" hidden>
             <p>A Facebook group is automatically created after submitting a Google form, which includes the group name, image, visibility, and membership details.</p>
           </div>
         </div>
+      </section>
 
+      <!-- Core Skills & Expertise -->
+      <section class="section-card" id="skills">
+        <h2>Core Skills & Expertise</h2>
 
-        <!-- Core Skills & Expertise -->
-        <section class="section-card" id="skills">
-          <h2>Core Skills & Expertise</h2>
-
-          <!-- Software -->
-          <div class="skill-group">
-            <h3>Software</h3>
-            <div class="skill-tags">
-              <span class="tag blue">Android Studio</span>
-              <span class="tag blue">Flutter</span>
-              <span class="tag blue">MySQL</span>
-              <span class="tag blue">Laravel</span>
-              <span class="tag blue">Docker</span>
-              <span class="tag blue">Google Cloud</span>
-              <span class="tag blue">AWS</span>
-              <span class="tag blue">Figma UI/UX</span>
-              <span class="tag blue">Salesforce</span>
-              <span class="tag blue">GitHub</span>
-              <span class="tag blue">GitLab</span>
-              <span class="tag blue">Postman</span>
-            </div>
+        <!-- Software -->
+        <div class="skill-group">
+          <h3>Software</h3>
+          <div class="skill-tags">
+            <span class="tag blue">Android Studio</span>
+            <span class="tag blue">Flutter</span>
+            <span class="tag blue">MySQL</span>
+            <span class="tag blue">Laravel</span>
+            <span class="tag blue">Docker</span>
+            <span class="tag blue">Google Cloud</span>
+            <span class="tag blue">AWS</span>
+            <span class="tag blue">Figma UI/UX</span>
+            <span class="tag blue">Salesforce</span>
+            <span class="tag blue">GitHub</span>
+            <span class="tag blue">GitLab</span>
+            <span class="tag blue">Postman</span>
           </div>
+        </div>
 
-          <!-- Technical Skills -->
-          <div class="skill-group">
-            <h3>Technical Skills</h3>
-            <div class="skill-tags">
-              <span class="tag green">Java</span>
-              <span class="tag green">Python</span>
-              <span class="tag green">SQL</span>
-              <span class="tag green">PHP</span>
-              <span class="tag green">Mobile Development (Native/Hybrid)</span>
-              <span class="tag green">Fine-Tuning LLM</span>
-              <span class="tag green">Training GPT Models</span>
-              <span class="tag green">Groq</span>
-              <span class="tag green">OpenAI LLMs</span>
-            </div>
+        <!-- Technical Skills -->
+        <div class="skill-group">
+          <h3>Technical Skills</h3>
+          <div class="skill-tags">
+            <span class="tag green">Java</span>
+            <span class="tag green">Python</span>
+            <span class="tag green">SQL</span>
+            <span class="tag green">PHP</span>
+            <span class="tag green">Mobile Development (Native/Hybrid)</span>
+            <span class="tag green">Fine-Tuning LLM</span>
+            <span class="tag green">Training GPT Models</span>
+            <span class="tag green">Groq</span>
+            <span class="tag green">OpenAI LLMs</span>
           </div>
+        </div>
 
-          <!-- Soft Skills -->
-          <div class="skill-group">
-            <h3>Soft Skills</h3>
-            <div class="skill-tags">
-              <span class="tag orange">Problem Solving</span>
-              <span class="tag orange">Team Collaboration</span>
-              <span class="tag orange">Communication</span>
-              <span class="tag orange">Leadership</span>
-              <span class="tag orange">Time Management</span>
-              <span class="tag orange">Adaptability</span>
-              <span class="tag orange">Critical Thinking</span>
-            </div>
+        <!-- Soft Skills -->
+        <div class="skill-group">
+          <h3>Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="tag orange">Problem Solving</span>
+            <span class="tag orange">Team Collaboration</span>
+            <span class="tag orange">Communication</span>
+            <span class="tag orange">Leadership</span>
+            <span class="tag orange">Time Management</span>
+            <span class="tag orange">Adaptability</span>
+            <span class="tag orange">Critical Thinking</span>
           </div>
-        </section>
+        </div>
       </section>
     </main>
   </div>
@@ -274,14 +280,12 @@
     // Toggle expandable cards
     document.querySelectorAll('.toggle-btn').forEach(btn => {
       btn.addEventListener('click', () => {
-        const details = btn.parentElement.nextElementSibling;
-        if (details.style.display === 'block') {
-          details.style.display = 'none';
-          btn.textContent = 'More';
-        } else {
-          details.style.display = 'block';
-          btn.textContent = 'Less';
-        }
+        const details = document.getElementById(btn.getAttribute('aria-controls'));
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+        btn.setAttribute('aria-expanded', String(!isOpen));
+        btn.textContent = isOpen ? 'More' : 'Less';
+        details.hidden = isOpen;
       });
     });
   </script>

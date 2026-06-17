@@ -22,11 +22,12 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 1rem;
 }
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
   background: linear-gradient(135deg, var(--primary-dark) 0%, #0f2340 100%);
   color: var(--text-secondary);
   min-height: 100vh;
@@ -40,6 +41,7 @@ body {
   padding: 2rem;
   max-width: 1200px;
   margin: auto;
+  align-items: flex-start;
 }
 
 /* Animations */
@@ -148,9 +150,12 @@ body {
   padding: 1.5rem;
   border-radius: 16px;
   border: 1px solid rgba(30, 136, 229, 0.2);
-  backdrop-filter: blur(10px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   transition: all var(--transition-smooth);
+  position: sticky;
+  top: 1.5rem;
+  max-height: calc(100vh - 3rem);
+  overflow: auto;
 }
 
 .left-column:hover {
@@ -164,6 +169,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: 0.8rem;
 }
 
 .profile-img {
@@ -212,13 +218,35 @@ h1 {
   font-weight: 600;
 }
 
+.section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.section-nav a {
+  padding: 0.75rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(30, 136, 229, 0.35);
+  background: rgba(30, 136, 229, 0.08);
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.section-nav a:hover {
+  background: rgba(30, 136, 229, 0.18);
+}
+
 /* Open to Work */
 .open-to-work {
   background: linear-gradient(135deg, rgba(0, 200, 83, 0.1) 0%, rgba(0, 200, 83, 0.05) 100%);
   border: 2px solid var(--accent-green);
   border-radius: 12px;
+  margin-top: 1.25rem;
   padding: 1.5rem;
-  backdrop-filter: blur(8px);
   transition: all var(--transition-smooth);
   animation: glowPulse 2s ease-in-out infinite;
 }
@@ -706,6 +734,7 @@ a:hover::after {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  min-width: 0;
 }
 
 .section-card {
@@ -713,7 +742,6 @@ a:hover::after {
   border-radius: 16px;
   padding: 1.5rem;
   border: 1px solid rgba(30, 136, 229, 0.15);
-  backdrop-filter: blur(8px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   transition: all var(--transition-smooth);
   opacity: 0;
@@ -786,6 +814,10 @@ a:hover::after {
 
   .left-column {
     order: 2;
+    position: static;
+    top: auto;
+    max-height: none;
+    overflow: visible;
   }
 
   .right-column {
