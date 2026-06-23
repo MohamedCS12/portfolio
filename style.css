@@ -806,10 +806,18 @@ a:hover::after {
 /* Tablet Devices (768px and below) */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column;
-    gap: 1.5rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
     padding: 1rem;
     max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .left-column,
+  .right-column {
+    min-width: 320px;
+    flex: 0 0 auto;
   }
 
   .left-column {
@@ -818,11 +826,13 @@ a:hover::after {
     top: auto;
     max-height: none;
     overflow: visible;
+    width: 320px;
   }
 
   .right-column {
     order: 1;
-    flex: 1;
+    flex: 1 1 560px;
+    min-width: 320px;
   }
 
   h1 {
